@@ -13,7 +13,7 @@
 		<style type="text/css">
 			body {
 				font-family: Helvetica, Arial, sans-serif;
-				background: #eee;
+				background: url(bkg.jpg);
 			}
 
 			#box {
@@ -21,8 +21,7 @@
 				width: 500px;
 				height: 380px;
 				background: #fff;
-				border-radius: 12px;
-				border: 1px solid #ccc;
+				border: 1px solid #aaa;
 				text-align: center;
 				opacity: 0;
 			}
@@ -74,6 +73,22 @@
 				color: #666;
 				font-size: 12px;
 			}
+
+			#imgcredit {
+				position: absolute;
+				bottom: 6px;
+				right: 6px;
+				color: #eee;
+				font-size: 10px;
+			}
+
+			#imgcredit a {
+				color: #eee;
+			}
+
+			#imgcredit a:visited {
+				color: #eee;
+			}
 		</style>
 		<script type="text/javascript">
 			function fadein() {
@@ -98,15 +113,13 @@
 			<h2>Coming Soon</h2>
 			<h3>Web Design, Code Tutorials, Gaming, and More</h3>
 			<h3>Questions? Click <a href="https://b0gosort.wufoo.com/forms/z6gt29w0faa5lu/" target="_blank">here</a> to contact me.</h3>
-			<span id="update">Last Updated: 24 August 2015</span>
+			<span id="update">Last Updated: 25 August 2015</span>
 		</div>
-
+		<span id="imgcredit">Background From <a href="http://4ever.eu" target="_blank">4ever.eu</a></span>
 		<!--
 		The div below is to access the WIP files that will be put up officially once they are all complete.
 		Feel free to look at them and give feedback if you're advanced enough to figure out how ;)
 		-->
-		<div id="hidden" onclick="reveal()">
-			Hidden WIP Files
-		</div>
+		<div id="hidden" onclick="reveal()"></div>
 	</body>
 </html>
