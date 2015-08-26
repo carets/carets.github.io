@@ -1,2 +1,2 @@
-# carets.github.io
+# carets
 Carets.io Website

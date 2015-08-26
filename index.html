@@ -1,9 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Carets.io</title>
-    </head>
-    <body>
-        <h1>Nothing here yet!</h1>
-    </body>
+	<head>
+		<title>Carets.io - Web Design, Code Tutorials, Gaming, and More</title>
+		<link rel="icon" type="image/png" href="favourites_icon.png">
+		<!--
+		To all those reading this code,
+		Yes, I know the styles and scripts should be in separate files but remember
+		THIS IS ALL TEMPORARY. I wanted to keep everything in one file for now so it's not too messy to clean up later.
+
+		I hope you all find this site interesting when it's finally up!
+		-->
+		<style type="text/css">
+			body {
+				font-family: Helvetica, Arial, sans-serif;
+				background: #eee;
+			}
+
+			#box {
+				margin: 100px auto 0 auto;
+				width: 500px;
+				height: 380px;
+				background: #fff;
+				border-radius: 12px;
+				border: 1px solid #ccc;
+				text-align: center;
+				opacity: 0;
+			}
+
+			h1 {
+				font-size: 72px;
+				margin: 50px 0 20px 0;
+			}
+
+			h2 {
+				font-size: 36px;
+			}
+
+			h3 {				
+				color: #666;
+			}
+
+			.c {
+				color: #ff1acd;
+				font-family: Consolas, "Courier New", Terminal;
+			}
+
+			.t {
+				color: #009e69;
+			}
+
+			a:hover {
+				text-decoration: none;
+			}
+
+			a:visited {
+				color: #00f;
+			}
+
+			#hidden {
+				position: absolute;
+				top: 50px;
+				left: 50px;
+				width: 50px;
+				height: 50px;
+				color: #eee;
+			}
+
+			#hidden:hover {
+				cursor: default;
+			}
+
+			#update {
+				color: #666;
+				font-size: 12px;
+			}
+		</style>
+		<script type="text/javascript">
+			function fadein() {
+				var box = document.getElementById("box");
+				box.style.transition = "opacity 1s";
+				box.style.opacity = "100";
+			}
+
+			function reveal() {
+				var code = prompt("Did you mean to open this dialogue? If you did, enter the code. If not, just press cancel.");
+				if (code == "3141") {
+					window.location.replace("hidden/index.html");
+				} else if (code != null) {
+					alert("Wrong code. Try looking through the javascript.")
+				}
+			}
+		</script>
+	</head>
+	<body onload="fadein()">
+		<div id="box">
+			<h1><span class="c">&#60</span><span class="t">Carets.io</span><span class="c">&#62</span></h1>
+			<h2>Coming Soon</h2>
+			<h3>Web Design, Code Tutorials, Gaming, and More</h3>
+			<h3>Questions? Click <a href="https://b0gosort.wufoo.com/forms/z6gt29w0faa5lu/" target="_blank">here</a> to contact me.</h3>
+			<span id="update">Last Updated: 24 August 2015</span>
+		</div>
+
+		<!--
+		The div below is to access the WIP files that will be put up officially once they are all complete.
+		Feel free to look at them and give feedback if you're advanced enough to figure out how ;)
+		-->
+		<div id="hidden" onclick="reveal()">
+			Hidden WIP Files
+		</div>
+	</body>
 </html>
